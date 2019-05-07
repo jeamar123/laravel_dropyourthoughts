@@ -1,0 +1,65 @@
+<div class="home-container">
+  
+	<div class="left-col">
+		<div class="white-box">
+				
+			<div class="user-profile-wrapper">
+				<div class="profile-bg-wrapper">
+					<img src="img/header-bg2.png">
+				</div>
+				<div class="user-image-wrapper">
+					<img src="img/icon-user.png">
+				</div>
+				<p class="user-name">Jeamar Paul</p>
+				<p class="user-pname">@jmrplbrs</p>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="middle-col">
+		
+			
+		<div class="drop-thoughts-wrapper">
+			<textarea cols="5" placeholder="Any Thoughts?"></textarea>
+
+			<div class="submit-thought-wrapper">
+				<button class="btn">Submit</button>
+			</div>
+		</div>
+
+		<div class="wall-container">
+
+			<div ng-repeat="list in [1,2,3]" class="feed-container">
+				<div class="feed-user-box">
+					<div class="user-icon">
+						<img src="img/icon-user.png">
+					</div>
+					<div class="user-details">
+						<p>Jeamar Libres</p>
+					</div>
+				</div>
+
+				<div class="feed-post">
+					<p class="feed-caption">Lorem Ipsum dolor sit amet. Lorem Ipsum dolor sit amet. Lorem Ipsum dolor sit amet.</p>
+					<img ng-if="$index == 0" src="img/header-bg2.png">
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="right-col">
+		<div class="white-box">
+			Lorem Ipsum
+		</div>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	$('body').on('change keyup keydown paste cut', 'textarea', function () {
+        $(this).height(0).height(this.scrollHeight);
+    }).find('textarea').change();
+</script>

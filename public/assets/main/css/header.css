@@ -1,0 +1,38 @@
+.main-header-container{
+	height: 40px;
+  border-bottom: 1px solid rgba(0,0,0,0.25);
+	background: #FFF;
+}
+.main-header-container .header-wrapper{
+	width: 80%;
+	margin: 0 auto;
+	height: 40px;
+	display: flex;
+	align-items: center;
+}
+.main-header-container .header-wrapper .main-nav{
+	flex: 1;
+}
+.main-header-container .header-wrapper .logout-nav{
+	width: 200px;
+	text-align: right;
+}
+.main-header-container .header-wrapper .nav{
+	display: inline-block;
+	width: 60px;
+	text-align: center;
+	border-bottom: 3px solid transparent;
+	height: 40px;
+	line-height: 42px;
+	cursor: pointer;
+}
+.main-header-container .header-wrapper .nav i{
+	font-size: 22px;
+	color: #66757f;
+}
+.main-header-container .header-wrapper .nav.active{
+	border-bottom: 3px solid #2FC2EF;
+}
+.main-header-container .header-wrapper .nav.active i{
+	color: #2FC2EF;
+}
